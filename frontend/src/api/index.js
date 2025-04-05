@@ -119,7 +119,7 @@ const videosData = {
     { 
       _id: "v11", 
       title: "Traditional Diya Making Techniques", 
-      videoUrl: "https://youtu.be/VIzsFbshMns?si=BaTInmoYkbv5zdg_" // Replace with a valid video URL
+      videoUrl: "https://www.youtube.com/watch?v=GQZqszkbpxE" // Replace with a valid video URL
     },
     { 
       _id: "v12", 
@@ -361,136 +361,134 @@ const dealersData = {
 const flashcardsData = {
   "1": {
     title: "Paper Bag Making Process",
-    // Using direct image URL that will work reliably
-    image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFficCnj4G4XnAXaY/root/content",
-    // Fallback image if the above doesn't work
+    image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQqB92V05IQOxbHP/root/content",
     fallbackImage: "https://via.placeholder.com/800x450?text=Paper+Bag+Making",
     steps: [
       {
         _id: "f1",
         stepNumber: 1,
         title: "Gather Materials",
-        description: "You'll need recycled paper or kraft paper, scissors, ruler, pencil, and glue or double-sided tape."
+        description: "You'll need recycled paper or kraft paper, scissors, ruler, pencil, and glue or double-sided tape.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQqB92V05IQOxbHP/root/content"
       },
       {
         _id: "f2",
         stepNumber: 2,
         title: "Measure and Cut Paper",
-        description: "Cut the paper to the desired size depending on the bag dimensions you want. A standard size is 30cm x 25cm."
+        description: "Cut the paper to the desired size depending on the bag dimensions you want. A standard size is 30cm x 25cm.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQlSMzqLr8MOTN8k/root/content"
       },
       {
         _id: "f3",
         stepNumber: 3,
         title: "Fold and Create Creases",
-        description: "Fold the paper as shown in the image, creating sharp creases at each fold. Make sure to align edges precisely."
+        description: "Fold the paper as shown in the image, creating sharp creases at each fold. Make sure to align edges precisely.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQhiRJFnyjeH1JHt/root/content"
       },
       {
         _id: "f4",
         stepNumber: 4,
         title: "Form the Bag Body",
-        description: "Fold the sides inward and create the bottom by folding up and securing with glue. Press firmly to ensure the glue bonds well."
+        description: "Fold the sides inward and create the bottom by folding up and securing with glue. Press firmly to ensure the glue bonds well.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQZNXQW6FsqBlXd4/root/content"
       },
       {
         _id: "f5",
         stepNumber: 5,
         title: "Add Handles",
-        description: "Attach paper or cord handles by gluing them to the inside of the bag's top edges. Make sure they're securely attached."
+        description: "Attach paper or cord handles by gluing them to the inside of the bag's top edges. Make sure they're securely attached.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQdWTChFXdOMnisR/root/content"
       },
       {
         _id: "f6",
         stepNumber: 6,
         title: "Reinforce and Decorate",
-        description: "Strengthen the bottom and handles if needed, then decorate your bag as desired. Use stamps, paint, or markers for personalization."
+        description: "Strengthen the bottom and handles if needed, then decorate your bag as desired. Use stamps, paint, or markers for personalization.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQW3f8dgEV3jOQZQ/root/content"
       }
     ]
   },
   "3": {
     title: "Sanitizer Making Process",
-    // Using the provided OneDrive image URL
-    image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFfzkTr6w03xG7dhU/root/content",
-    // Fallback image if the above doesn't work
+    image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRLCvpmF7lySpigd/root/content",
     fallbackImage: "https://via.placeholder.com/800x450?text=Sanitizer+Making",
     steps: [
       {
         _id: "f21",
         stepNumber: 1,
         title: "Gather Materials and Ingredients",
-        description: "You'll need isopropyl alcohol (91-99%), aloe vera gel, essential oils (optional), glycerin (optional), a clean bowl, measuring cups, a funnel, and containers for storage."
+        description: "You'll need isopropyl alcohol (91-99%), aloe vera gel, essential oils (optional), glycerin (optional), a clean bowl, measuring cups, a funnel, and containers for storage.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRLCvpmF7lySpigd/root/content"
       },
       {
         _id: "f22",
         stepNumber: 2,
         title: "Prepare Your Workspace",
-        description: "Clean your work area thoroughly. Ensure you have good ventilation and are away from any open flames as alcohol is flammable."
+        description: "Clean your work area thoroughly. Ensure you have good ventilation and are away from any open flames as alcohol is flammable.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRBp84UHFKy0Ip4Q/root/content"
       },
       {
         _id: "f23",
         stepNumber: 3,
         title: "Mix the Ingredients",
-        description: "Combine 2 parts alcohol with 1 part aloe vera gel in a clean bowl. This creates a sanitizer with approximately 60-70% alcohol content, which is effective against most germs."
+        description: "Combine 2 parts alcohol with 1 part aloe vera gel in a clean bowl. This creates a sanitizer with approximately 60-70% alcohol content, which is effective against most germs.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRGHzHdMZR9jjiux/root/content"
       },
       {
         _id: "f24",
         stepNumber: 4,
         title: "Add Optional Ingredients",
-        description: "If desired, add a few drops of essential oil for fragrance (like lavender or tea tree oil) and a few drops of glycerin to prevent skin dryness."
+        description: "If desired, add a few drops of essential oil for fragrance (like lavender or tea tree oil) and a few drops of glycerin to prevent skin dryness.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQ6yYoi2Kf2yrxN9/root/content"
       },
       {
         _id: "f25",
         stepNumber: 5,
         title: "Mix Thoroughly",
-        description: "Stir the mixture well to ensure all ingredients are fully incorporated. Make sure there are no clumps of aloe vera gel."
+        description: "Stir the mixture well to ensure all ingredients are fully incorporated. Make sure there are no clumps of aloe vera gel.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQ179UDrlh4hbOb3/root/content"
       },
       {
         _id: "f26",
         stepNumber: 6,
         title: "Transfer to Containers",
-        description: "Using a funnel, carefully pour the sanitizer into clean spray bottles or pump containers. Label them with the contents and date of preparation."
+        description: "Using a funnel, carefully pour the sanitizer into clean spray bottles or pump containers. Label them with the contents and date of preparation.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQ8OlMjjvSq9Gsu9/root/content"
       }
     ]
   },
   "7": {
     title: "Candle Making Process",
-    // Using the provided OneDrive image URL
-    image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQDnnh5kq_RDr0VJ/root/content",
-    // Fallback image if the above doesn't work
+    image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRbrcQQH30aOBpEH/root/content",
     fallbackImage: "https://via.placeholder.com/800x450?text=Candle+Making",
     steps: [
       {
         _id: "f31",
         stepNumber: 1,
-        title: "Gather Materials and Equipment",
-        description: "Collect wax (paraffin, soy, or beeswax), wicks, fragrance oils, colorants, a double boiler or melting pot, thermometer, containers, and a heat source."
+        title: "Melt the Wax",
+        description: "Place wax chunks in a heat-safe pot and melt them on a stove over low to medium heat. Stir occasionally to ensure even melting.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRbrcQQH30aOBpEH/root/content"
       },
       {
         _id: "f32",
         stepNumber: 2,
-        title: "Prepare Containers and Wicks",
-        description: "Clean and dry your containers. Attach wicks to the bottom of containers using a small amount of melted wax or wick stickers. Use chopsticks or pencils to center and hold the wicks."
+        title: "Add Fragrance and Dye",
+        description: "Add a few drops of fragrance oil and liquid dye to the melted wax. This gives the candle a pleasant scent and color.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRNlOPXPZKsXgO0-/root/content"
       },
       {
         _id: "f33",
         stepNumber: 3,
-        title: "Melt the Wax",
-        description: "Using a double boiler, slowly melt the wax to the recommended temperature (usually around 180°F/82°C). Stir occasionally to ensure even melting."
+        title: "Pour Wax Into Container",
+        description: "Pour the wax into a prepared container, leaving space at the top for the wick. Use a chopstick or pencil to center the wick.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRQtvdDG3UCl0P8y/root/content"
       },
       {
         _id: "f34",
         stepNumber: 4,
-        title: "Add Fragrance and Color",
-        description: "Once the wax reaches the appropriate temperature, remove from heat and add fragrance oils (typically 6-10% of wax weight) and desired candle dye. Stir gently for 1-2 minutes."
-      },
-      {
-        _id: "f35",
-        stepNumber: 5,
-        title: "Pour into Containers",
-        description: "Cool the wax slightly to the recommended pouring temperature (usually 135-145°F/57-63°C). Carefully pour into prepared containers, leaving some space at the top."
-      },
-      {
-        _id: "f36",
-        stepNumber: 6,
-        title: "Allow to Cool and Cure",
-        description: "Let candles cool undisturbed for several hours at room temperature. Trim wicks to 1/4 inch before lighting. For best results, allow candles to cure for 24-48 hours before use."
+        title: "Insert and Trim the Wick",
+        description: "Insert the wick into the wax, leaving a small amount above the surface. Trim the wick to 1/4 inch above the wax level.",
+        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRVr43QnT4FRsea_/root/content"
       }
     ]
   }

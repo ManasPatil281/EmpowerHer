@@ -148,5 +148,211 @@
       "previous": "Previous",
       "next": "Next"
     }
+  },
+  "content": {
+    "skills": {
+      "paperBagMaking": {
+        "title": "Paper Bag Making",
+        "description": "Learn to create eco-friendly paper bags from recycled materials. Perfect for small businesses and sustainable packaging solutions.",
+        "steps": {
+          "1": {
+            "title": "Gather Materials",
+            "description": "Lay out newspaper, glue stick, scissors, and rope on a clean surface."
+          },
+          "2": {
+            "title": "Fold Bottom Edge",
+            "description": "Fold the bottom of the newspaper upward by 3 inches. Use a ruler to keep the fold straight."
+          },
+          "3": {
+            "title": "Apply Glue to Flap",
+            "description": "Place visible glue dots along the inside edge of the folded flap. Keep the glue bottle close."
+          },
+          "4": {
+            "title": "Shape into a Bag",
+            "description": "Fold the paper into a rectangular bag. Use arrows to guide folds. Glue only the red-marked areas."
+          },
+          "5": {
+            "title": "Add Rope Handles",
+            "description": "Punch holes near the top. Thread jute rope through and tie secure knots inside."
+          },
+          "6": {
+            "title": "Complete",
+            "description": "The paper bag is done and is ready for use."
+          }
+        }
+      },
+      "sanitizerMaking": {
+        "title": "Sanitizer Making",
+        "description": "Learn to make effective hand sanitizers at home with proper alcohol content and skin-friendly ingredients.",
+        "steps": {
+          "1": {
+            "title": "Gather Ingredients",
+            "description": "Place isopropyl alcohol, aloe vera gel, essential oil, and a funnel on a clean surface."
+          },
+          "2": {
+            "title": "Measure Alcohol",
+            "description": "Pour 3 parts of isopropyl alcohol into a measuring cup while wearing protective gloves."
+          },
+          "3": {
+            "title": "Mix Ingredients",
+            "description": "Combine components in a bowl; stir until the mixture becomes slightly opaque and thickens."
+          },
+          "4": {
+            "title": "Fill Bottle",
+            "description": "Use a funnel to pour the sanitizer into a bottle, noting liquid levels at every 100ml."
+          },
+          "5": {
+            "title": "Label Bottle",
+            "description": "Apply a label marked \"70% ALCOHOL\" with a visible flame hazard symbol."
+          },
+          "6": {
+            "title": "Ready to Use",
+            "description": "Your homemade hand sanitizer is now complete and ready for safe use."
+          }
+        }
+      },
+      "candleMaking": {
+        "title": "Candle Making",
+        "description": "Learn the art of making beautiful, scented candles for personal use or to start a small business.",
+        "steps": {
+          "1": {
+            "title": "Melt the Wax",
+            "description": "Place wax chunks in a heat-safe pot and melt them on a stove over low to medium heat. Stir occasionally to ensure even melting."
+          },
+          "2": {
+            "title": "Add Fragrance and Dye",
+            "description": "Add a few drops of fragrance oil and liquid dye to the melted wax. This gives the candle a pleasant scent and color."
+          },
+          "3": {
+            "title": "Pour Wax Into Container",
+            "description": "Pour the wax into a prepared container, leaving space at the top for the wick. Use a chopstick or pencil to center the wick."
+          },
+          "4": {
+            "title": "Insert and Trim the Wick",
+            "description": "Insert the wick into the wax, leaving a small amount above the surface. Trim the wick to 1/4 inch above the wax level."
+          }
+        }
+      },
+      "clothBagMaking": {
+        "title": "Cloth Bag Making",
+        "description": "Learn to create reusable and eco-friendly cloth bags. Perfect for sustainable shopping and reducing plastic waste.",
+        "steps": {
+          "1": {
+            "title": "Gather Materials",
+            "description": "You'll need fabric (cotton or canvas), scissors, thread, sewing machine or needle, measuring tape, and pins."
+          },
+          "2": {
+            "title": "Cut the Fabric",
+            "description": "Measure and cut the fabric according to your desired bag size. A standard size is 40cm x 45cm for the main piece and 60cm x 10cm for handles."
+          },
+          "3": {
+            "title": "Sew the Sides",
+            "description": "Fold the fabric in half with the right sides together and sew along the sides, leaving the top open. Reinforce the corners for durability."
+          },
+          "4": {
+            "title": "Create the Bottom",
+            "description": "Flatten the bottom corners to create a box shape and sew across to form the base of the bag."
+          },
+          "5": {
+            "title": "Make and Attach Handles",
+            "description": "Fold and sew the handle strips, then attach them securely to the top edges of the bag."
+          },
+          "6": {
+            "title": "Finish the Top Edge",
+            "description": "Fold and hem the top edge of the bag for a clean finish. Add any decorative elements if desired."
+          }
+        }
+      },
+      "maskMaking": {
+        "title": "Mask Making",
+        "description": "Learn to make comfortable and effective cloth masks with proper filtration layers.",
+        "steps": {
+          "1": {
+            "title": "Gather Materials",
+            "description": "You'll need cotton fabric, elastic bands or fabric ties, scissors, thread, sewing machine or needle, and pins."
+          },
+          "2": {
+            "title": "Cut the Fabric",
+            "description": "Cut two pieces of fabric (20cm x 15cm) for the outer layer and two pieces for the inner layer. Cut elastic bands to 15cm length."
+          },
+          "3": {
+            "title": "Sew the Layers",
+            "description": "Place the fabric pieces right sides together and sew along the curved edges, leaving the straight edge open for turning."
+          },
+          "4": {
+            "title": "Add Pleats",
+            "description": "Create three pleats on each side of the mask and secure them with pins. Sew across the pleats to hold them in place."
+          },
+          "5": {
+            "title": "Attach Elastic",
+            "description": "Fold the edges and sew to create channels for the elastic. Insert the elastic and secure the ends."
+          },
+          "6": {
+            "title": "Final Touches",
+            "description": "Add a nose wire if desired and ensure all edges are properly finished. Wash the mask before first use."
+          }
+        }
+      },
+      "diyaMaking": {
+        "title": "Diya Making",
+        "description": "Learn to create beautiful clay diyas for festivals, home decoration, and special occasions.",
+        "steps": {
+          "1": {
+            "title": "Prepare the Clay",
+            "description": "Knead the clay until it's soft and pliable. Add water if needed to achieve the right consistency."
+          },
+          "2": {
+            "title": "Shape the Base",
+            "description": "Roll the clay into a ball and flatten it to form the base of the diya. Make it about 1cm thick."
+          },
+          "3": {
+            "title": "Form the Walls",
+            "description": "Create the walls by pinching and shaping the edges upward. Make sure the walls are even and about 2-3cm high."
+          },
+          "4": {
+            "title": "Add Decoration",
+            "description": "Use tools to create patterns or add small clay decorations. Let your creativity flow!"
+          },
+          "5": {
+            "title": "Dry and Paint",
+            "description": "Let the diya dry completely, then paint it with acrylic colors. Add glitter or other decorations if desired."
+          },
+          "6": {
+            "title": "Final Touches",
+            "description": "Apply a clear varnish to protect the paint and add shine. Let it dry before use."
+          }
+        }
+      },
+      "sanitaryPadMaking": {
+        "title": "Sanitary Pad Making",
+        "description": "Learn to make reusable, eco-friendly sanitary pads using natural materials.",
+        "steps": {
+          "1": {
+            "title": "Gather Materials",
+            "description": "You'll need cotton fabric, waterproof fabric (PUL), absorbent material, thread, scissors, and sewing machine or needle."
+          },
+          "2": {
+            "title": "Cut the Layers",
+            "description": "Cut the top layer (cotton), middle layer (absorbent material), and bottom layer (waterproof fabric) to the desired size."
+          },
+          "3": {
+            "title": "Assemble the Layers",
+            "description": "Layer the materials: cotton on top, absorbent material in the middle, and waterproof fabric at the bottom."
+          },
+          "4": {
+            "title": "Sew the Layers",
+            "description": "Sew around the edges, leaving a small opening. Trim excess fabric and turn right side out."
+          },
+          "5": {
+            "title": "Add Wings",
+            "description": "Cut and attach wings to the sides. Add snaps or buttons for secure fastening."
+          },
+          "6": {
+            "title": "Final Steps",
+            "description": "Wash the pad before first use. Store in a clean, dry place when not in use."
+          }
+        }
+      }
+    }
   }
 }

@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { fetchFeaturedSkills } from '../api';
 import { useTranslation } from 'react-i18next';
+import SkillCard from '../components/SkillCard';
 
 const Home = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [skills, setSkills] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -48,6 +50,7 @@ const Home = () => {
             <motion.button 
               whileHover={{ scale: 1.05, backgroundColor: "#b91c1c" }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => navigate('/skills')}
               className="mt-6 bg-red-600 text-white px-8 py-3 rounded-lg font-medium text-lg shadow-lg transform transition-all duration-300"
             >
               {t('home.hero.cta')}
@@ -62,23 +65,18 @@ const Home = () => {
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-gradient-to-tr from-red-200 to-yellow-100 rounded-2xl transform rotate-2 scale-105"></div>
               <img
-                src=
- "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQJyTeG0SICtF-Ml/root/content"
-
-
+                src="https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQJyTeG0SICtF-Ml/root/content"
                 alt="EmpowerHer Hero"
                 className="relative rounded-2xl shadow-xl w-full max-w-[700px] h-auto object-cover border-2 border-white z-10"
-              />
+              />  
             </div>
           </motion.div>
         </div>
         <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-
-
       {/* Skills Section - Improved visual hierarchy */}
-      <section className="bg-white py-16">
+      <section id="skills-section" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -129,32 +127,11 @@ const Home = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  whileHover={{ y: -8, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
-                  className="bg-gradient-to-b from-white to-red-50 rounded-xl shadow-md overflow-hidden transform transition-all duration-300"
+                  whileHover={{ y: -8 }}
                 >
-                  <div className="relative">
-                    <img 
-                      src={skill.thumbnail} 
-                      alt={skill.title} 
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
-                  </div>
-                  <div className="p-5">
-                    <h3 className="text-xl font-bold text-gray-800">{skill.title}</h3>
-                    <p className="mt-2 text-gray-600 text-sm line-clamp-2">{skill.description}</p>
-                    <a 
-                      href="https://womenswelfarefoundation.com/" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="mt-3 inline-flex items-center text-red-600 font-medium hover:text-red-700 transition-colors"
-                    >
-                      {t('home.skills.learnMore')} 
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </a>
-                  </div>
+                  <Link to={`/skills/${skill._id}`}>
+                    <SkillCard skill={skill} />
+                  </Link>
                 </motion.div>
               ))}
             </motion.div>
