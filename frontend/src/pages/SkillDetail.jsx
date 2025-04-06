@@ -25,6 +25,19 @@ const SkillDetail = () => {
   const [error, setError] = useState(null);
   const [playingVideo, setPlayingVideo] = useState(null);
 
+  const getSkillKey = (id) => {
+    switch(id) {
+      case "1": return "paperBagMaking";
+      case "2": return "clothBagMaking";
+      case "3": return "sanitizerMaking";
+      case "4": return "maskMaking";
+      case "5": return "sanitaryPadMaking";
+      case "6": return "diyaMaking";
+      case "7": return "candleMaking";
+      default: return null;
+    }
+  };
+
   useEffect(() => {
     const fetchSkillData = async () => {
       try {
@@ -188,24 +201,26 @@ const SkillDetail = () => {
             
             return (
               <div key={video._id} className="relative">
-                <img
-                  src={thumbnailUrl || 'https://via.placeholder.com/800x450'}
-                  alt={video.title || 'Video'}
-                  className="w-full rounded-lg shadow-md"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button 
-                    className="bg-red-600 text-white p-3 rounded-full hover:bg-red-700 transition-colors"
-                    onClick={() => handlePlayVideo(video)}
-                    aria-label={t('pages.skillDetail.playVideo')}
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.868v4.264a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" />
-                    </svg>
-                  </button>
+                <p className="mb-4 text-lg font-semibold">{video.title || 'A Beginner\'s Guide'}</p>
+                <div className="relative w-full aspect-video">
+                  <img
+                    src={thumbnailUrl || 'https://via.placeholder.com/800x450'}
+                    alt={video.title || 'Video'}
+                    className="w-full h-full object-cover rounded-lg shadow-md"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <button 
+                      className="bg-red-600 text-white p-3 rounded-full hover:bg-red-700 transition-colors"
+                      onClick={() => handlePlayVideo(video)}
+                      aria-label={t('pages.skillDetail.playVideo')}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.868v4.264a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-                <p className="mt-4 text-lg font-semibold">{video.title || 'A Beginner\'s Guide'}</p>
               </div>
             );
           })}
@@ -213,35 +228,37 @@ const SkillDetail = () => {
       );
     } else if (activeTab === 'flashcards') {
       if (flashcard) {
+        const skillKey = getSkillKey(id);
         return (
-          <div className="flashcards-container space-y-8">
-            <div className="skill-flashcard bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="w-full flex justify-center">
-                <img
-                  src={flashcard.image} 
-                  alt={flashcard.title} 
-                  className="w-full object-contain max-h-full"
-                  style={{ maxHeight: "100vh" }}
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = flashcard.fallbackImage || "https://via.placeholder.com/800x450?text=Flashcard+Image";
-                  }}
-                />
-              </div>
-              
-              <div className="p-6">
-                <h2 className="text-2xl font-bold mb-4">{flashcard.title}</h2>
-                
-                <div className="steps-container space-y-6">
-                  {flashcard.steps.map(step => (
-                    <div key={step._id} className="step">
-                      <h3 className="text-lg font-semibold">Step {step.stepNumber}: {step.title}</h3>
-                      <p className="text-gray-600">{step.description}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {flashcard.steps.map((step, index) => (
+              <div key={step._id} className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div className="w-full">
+                  <img
+                    src={step.image}
+                    alt={`Step ${step.stepNumber}`}
+                    className="w-full object-contain max-h-[400px]"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = flashcard.fallbackImage || "https://via.placeholder.com/800x450?text=Flashcard+Image";
+                    }}
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary-600 text-white font-bold text-lg mr-4">
+                      {step.stepNumber}
                     </div>
-                  ))}
+                    <h3 className="text-xl font-bold text-gray-800">
+                      {skillKey ? t('content.skills.' + skillKey + '.steps.' + step.stepNumber + '.title') : step.title}
+                    </h3>
+                  </div>
+                  <p className="text-gray-600">
+                    {skillKey ? t('content.skills.' + skillKey + '.steps.' + step.stepNumber + '.description') : step.description}
+                  </p>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         );
       }
@@ -340,22 +357,22 @@ const SkillDetail = () => {
                 <div className="md:flex">
                   <div className="md:flex-shrink-0">
                     <img 
-                      className="h-64 w-full object-cover md:w-64" 
+                      className="h-48 w-full object-cover md:w-48" 
                       src={skill.thumbnail || "/placeholder-skill.jpg"} 
                       alt={skill.title}
                     />
                   </div>
-                  <div className="p-8">
+                  <div className="p-6">
                     <div className="uppercase tracking-wide text-sm text-red-700 font-semibold">
                       {skill.category || "Skill"}
                     </div>
-                    <h1 className="mt-1 text-3xl font-bold text-gray-900 leading-tight">
+                    <h1 className="mt-1 text-2xl font-bold text-gray-900 leading-tight">
                       {skill.title}
                     </h1>
-                    <p className="mt-2 text-gray-600">
+                    <p className="mt-2 text-gray-600 text-sm">
                       {skill.description}
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <div className="mt-3 flex flex-wrap gap-2">
                       {skill.tags && skill.tags.map((tag, index) => (
                         <span key={index} className="px-2 py-1 bg-red-100 text-red-700 text-xs rounded-full">
                           {tag}

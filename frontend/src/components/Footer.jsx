@@ -95,10 +95,15 @@ const Footer = () => {
             <p className="text-gray-700 leading-relaxed mb-6">
               {t('footer.missionText')}
             </p>
-            <Link to="/about" className="inline-flex items-center text-red-700 font-medium hover:text-red-800 transition-colors group">
+            <a 
+              href="https://womenswelfarefoundation.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-red-700 font-medium hover:text-red-800 transition-colors group"
+            >
               {t('footer.learnMore')}
               <FiArrowRight className="ml-2 transform transition-transform group-hover:translate-x-1" />
-            </Link>
+            </a>
           </div>
         </div>
         
