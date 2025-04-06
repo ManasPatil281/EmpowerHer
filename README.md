@@ -1,145 +1,126 @@
 
-# EmpowerHer
+# EmpowerHer: Empowering Women through Resources, Community & AI Chat
 
-EmpowerHer is a web application dedicated to empowering women by providing resources, community support, and AI‑powered chat functionality. It features a responsive React frontend and a robust Node.js/Express backend with MongoDB.
+EmpowerHer is a web application dedicated to empowering women by providing curated resources, peer‑to‑peer community support, and an AI‑powered chat assistant. With a responsive React frontend and a Node.js/Express backend backed by MongoDB, EmpowerHer helps bridge information gaps and foster an inclusive support network.
 
 ## Table of Contents
+- [Overview](#overview)
 - [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)  
-  - [Clone the Repository](#clone-the-repository)  
-  - [Backend Setup](#backend-setup)  
-  - [Frontend Setup](#frontend-setup)  
-- [Environment Variables](#environment-variables)
-- [Project Structure](#project-structure)
-- [Scripts](#scripts)
+- [Technologies Used](#technologies-used)
+- [Installation & Setup](#installation--setup)
+- [Usage](#usage)
+- [Project Roadmap](#project-roadmap)
 - [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
 - [License](#license)
 
+## Overview
+Women often face barriers accessing reliable information on health, careers, legal rights, mental wellness, and mentorship. EmpowerHer addresses these gaps by:
+- Aggregating vetted articles, videos, and expert links.
+- Enabling real‑time AI chat for personalized guidance.
+- Fostering a moderated community forum for peer support.
+- Supporting multiple languages and accessibility standards.
+
 ## Features
-- User authentication & authorization (JWT)
-- AI‑powered chat (via `/backend/routes/chat.js`)
-- Resource directory for articles, links & mentorship
-- Multi‑language support (i18n)
-- Smooth animations with Framer Motion
-- Responsive design with Tailwind CSS
+- **User Authentication & Profiles**  
+  Secure signup/login with JWT, personalized dashboards.
+- **AI‑Powered Chat Assistant**  
+  Context‑aware guidance using OpenAI API for health tips, career advice, legal FAQs, and more.
+- **Resource Directory**  
+  Categorized library of articles, tutorials, videos, and external links.
+- **Community Forum**  
+  Post questions, share experiences, upvote answers, and connect with mentors.
+- **Interactive Learning Modules**  
+  Quizzes, goal‑setting tools, and progress tracking.
+- **Multi‑Language & Accessibility**  
+  i18n support (English, Hindi, etc.), WCAG‑compliant UI, keyboard navigation.
+- **Responsive Design & Animations**  
+  Tailwind CSS for mobile‑first layouts and Framer Motion for smooth transitions.
 
-## Tech Stack
-- **Frontend**: React, Vite, Tailwind CSS, React Router, i18next, Framer Motion  
-- **Backend**: Node.js, Express, MongoDB (Mongoose), CORS, dotenv  
-- **Deployment**: Netlify (frontend), Heroku/Vercel (backend)
+## Technologies Used
+- **Frontend**  
+  React, Vite, Tailwind CSS, React Router, i18next, Framer Motion  
+- **Backend**  
+  Node.js, Express, MongoDB (Mongoose), CORS, dotenv  
+- **AI & APIs**  
+  OpenAI GPT‑4 API for chat, RESTful endpoints  
+- **Deployment**  
+  Netlify (frontend), Heroku/Vercel (backend)  
 
-## Prerequisites
-- Node.js v16+ & npm  
-- MongoDB Atlas account or local MongoDB instance
+## Installation & Setup
 
-## Getting Started
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/ManasPatil281/EmpowerHer.git
+   cd EmpowerHer
+   ```
 
-### Clone the Repository
-```bash
-git clone https://github.com/ManasPatil281/EmpowerHer.git
-cd EmpowerHer
-```
-
-### Backend Setup
-1. Navigate to the backend directory and install dependencies:
+2. **Backend Setup**  
    ```bash
    cd backend
    npm install
    ```
-2. Create a `.env` file in `backend/` with the following variables:
+   Create `backend/.env`:
    ```env
    MONGODB_URI=your_mongo_connection_string
    PORT=5000
+   OPENAI_API_KEY=your_openai_api_key
    ```
-3. Start the backend server in development mode:
+   Start server:
    ```bash
    npm run dev
    ```
-   The backend will run at `http://localhost:5000`.
+   Backend runs at `http://localhost:5000`.
 
-### Frontend Setup
-1. Navigate to the frontend directory and install dependencies:
+3. **Frontend Setup**  
    ```bash
    cd ../frontend
    npm install
    ```
-2. (Optional) Create a `.env` file in `frontend/` to override the API URL:
+   (Optional) Create `frontend/.env`:
    ```env
    VITE_API_URL=http://localhost:5000
    ```
-3. Start the development server:
+   Start dev server:
    ```bash
    npm run dev
    ```
-   The frontend will run at `http://localhost:5173`.
+   Frontend runs at `http://localhost:5173`.
 
-## Environment Variables
+## Usage
+- **AI Chat**: Click “Chat” in the nav bar, type your question, and receive instant guidance.  
+- **Browse Resources**: Navigate “Resources” to filter by topic (Health, Career, Legal, Wellness).  
+- **Community Forum**: Post questions, reply to threads, and upvote insights.  
+- **Learning Modules**: Complete quizzes and track your progress under “Learn.”
 
-### Backend (`backend/.env`)
-```env
-MONGODB_URI=your_mongo_connection_string
-PORT=5000
-```
-
-### Frontend (`frontend/.env`)
-```env
-VITE_API_URL=http://localhost:5000
-```
-
-## Project Structure
-```
-EmpowerHer/
-├── backend/
-│   ├── src/
-│   │   ├── config/
-│   │   ├── controllers/
-│   │   ├── db/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   ├── utils/
-│   │   ├── app.js
-│   │   └── index.js
-│   ├── routes/
-│   │   └── chat.js
-│   ├── package.json
-│   └── README.md
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── vite.config.js
-├── package.json
-└── README.md
-```
-
-## Scripts
-### Backend
-- `npm run dev` – Start server with nodemon (watch & reload)
-
-### Frontend
-- `npm run dev` – Start Vite development server  
-- `npm run build` – Build for production  
-- `npm run preview` – Preview production build
+## Project Roadmap
+- **Phase 1 (0–3 Months): Prototype & MVP**  
+  – Build core chat and resource features  
+  – Conduct user testing with focus groups  
+- **Phase 2 (3–6 Months): Expansion & Refinement**  
+  – Add interactive learning modules and quizzes  
+  – Integrate additional languages and accessibility enhancements  
+- **Phase 3 (6–12 Months): Scale & Partnerships**  
+  – Launch mobile app (React Native)  
+  – Partner with NGOs, universities, and government programs  
+  – Implement mentor‑matching and live webinars  
 
 ## Contributing
-Contributions are welcome! Please follow these steps:
-1. **Fork the repository**  
-2. **Create a feature branch**  
+We welcome contributions! To get started:
+1. Fork the repo  
+2. Create a branch:  
    ```bash
    git checkout -b feature/YourFeature
    ```  
-3. **Make your changes & commit**  
+3. Commit your changes:  
    ```bash
    git add .
    git commit -m "Add YourFeature"
    ```  
-4. **Push to your branch**  
-   ```bash
-   git push origin feature/YourFeature
-   ```  
-5. **Open a Pull Request** detailing your changes
+4. Push and open a Pull Request.
+
+## Acknowledgments
+We extend our heartfelt thanks to our mentor, **Prof. Abha Tewari**, for her invaluable guidance and support throughout the project.
 
 ## License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
