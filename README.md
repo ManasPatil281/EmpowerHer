@@ -1,4 +1,4 @@
-```markdown
+
 # EmpowerHer
 
 EmpowerHer is a web application dedicated to empowering women by providing resources, community support, and AI‑powered chat functionality. It features a responsive React frontend and a robust Node.js/Express backend with MongoDB.
