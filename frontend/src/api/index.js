@@ -6,49 +6,49 @@ const skillsData = [
     _id: "1", 
     title: "Paper Bag Making", 
     description: "Learn how to create eco-friendly paper bags", 
-    thumbnail: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFb3v8XnU0WdTTaxI/root/content", 
+    thumbnail: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451409/paper_bag_making_rbpzwa.jpg",
     content: "Paper bag making is an eco-friendly skill that helps reduce plastic waste. This course teaches you how to create durable and attractive paper bags using simple materials."
   },
   { 
     _id: "2", 
     title: "Cloth Bag Making", 
     description: "Create sustainable and stylish cloth bags", 
-    thumbnail: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFcjrqDwYCMfA7j7g/root/content",
+    thumbnail: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451675/cloth_bag_making_rmyioj.jpg",
     content: "Cloth bag making is a sustainable alternative to plastic bags. Learn to design and sew different types of cloth bags that are both functional and fashionable."
   },
   { 
     _id: "3", 
     title: "Sanitizer Making", 
     description: "Learn to make effective hand sanitizers at home", 
-    thumbnail: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFcSO-WEQxJ_zthjw/root/content",
+    thumbnail: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451673/something_making_y81xao.jpg",
     content: "This course teaches you how to make effective hand sanitizers using readily available ingredients. Learn the correct proportions and methods for safe and effective sanitizers."
   },
   { 
     _id: "4", 
     title: "Mask Making", 
     description: "Create protective and comfortable face masks", 
-    thumbnail: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFddS7ZS2yuWtWddQ/root/content",
+    thumbnail: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451672/fabric_mask_making_ebvp8s.jpg",
     content: "Learn how to make protective face masks that are both effective and comfortable. This skill helps protect yourself and others while offering potential income opportunities."
   },
   { 
     _id: "5", 
     title: "Sanitary Pads Making", 
     description: "Create affordable and eco-friendly sanitary pads", 
-    thumbnail: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFbh3-OTrcAQ79IKU/root/content",
+    thumbnail: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451674/candle_making_yril0z.jpg",
     content: "This course teaches you how to make reusable, eco-friendly sanitary pads. Learn about sustainable menstrual health solutions that are cost-effective and environmentally responsible."
   },
   { 
     _id: "6", 
     title: "Diya Making", 
     description: "Craft beautiful traditional diyas for festivals", 
-    thumbnail: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFcOe1tb48X10FguA/root/content",
+    thumbnail: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451677/diya_making_yjkc07.jpg",
     content: "Diya making is a traditional craft that's especially popular during festivals. Learn to create beautiful clay diyas with various designs and decorations."
   },
   { 
     _id: "7", 
     title: "Candle Making", 
     description: "Create decorative and scented candles", 
-    thumbnail: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFbPR6XmFHLSPjkuE/root/content",
+    thumbnail: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451674/candle_making2_qbu4ct.jpg",
     content: "Candle making is both a relaxing hobby and a potential business. Learn to make various types of candles including decorative, scented, and specialty designs."
   }
 ];
@@ -361,7 +361,7 @@ const dealersData = {
 const flashcardsData = {
   "1": {
     title: "Paper Bag Making Process",
-    image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQqB92V05IQOxbHP/root/content",
+    image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451692/paper1_jx1zzu.jpg",
     fallbackImage: "https://via.placeholder.com/800x450?text=Paper+Bag+Making",
     steps: [
       {
@@ -369,48 +369,48 @@ const flashcardsData = {
         stepNumber: 1,
         title: "Gather Materials",
         description: "You'll need recycled paper or kraft paper, scissors, ruler, pencil, and glue or double-sided tape.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQqB92V05IQOxbHP/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451692/paper1_jx1zzu.jpg"
       },
       {
         _id: "f2",
         stepNumber: 2,
         title: "Measure and Cut Paper",
         description: "Cut the paper to the desired size depending on the bag dimensions you want. A standard size is 30cm x 25cm.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQlSMzqLr8MOTN8k/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451689/paper2_lzdbik.jpg"
       },
       {
         _id: "f3",
         stepNumber: 3,
         title: "Fold and Create Creases",
         description: "Fold the paper as shown in the image, creating sharp creases at each fold. Make sure to align edges precisely.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQhiRJFnyjeH1JHt/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451693/paper3_pwp8s1.jpg"
       },
       {
         _id: "f4",
         stepNumber: 4,
         title: "Form the Bag Body",
         description: "Fold the sides inward and create the bottom by folding up and securing with glue. Press firmly to ensure the glue bonds well.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQZNXQW6FsqBlXd4/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451689/paper4_a6jg7t.jpg"
       },
       {
         _id: "f5",
         stepNumber: 5,
         title: "Add Handles",
         description: "Attach paper or cord handles by gluing them to the inside of the bag's top edges. Make sure they're securely attached.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQdWTChFXdOMnisR/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451693/paper5_ziptt7.jpg"
       },
       {
         _id: "f6",
         stepNumber: 6,
         title: "Reinforce and Decorate",
         description: "Strengthen the bottom and handles if needed, then decorate your bag as desired. Use stamps, paint, or markers for personalization.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQW3f8dgEV3jOQZQ/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451690/paper6_sstilm.jpg"
       }
     ]
   },
   "3": {
     title: "Sanitizer Making Process",
-    image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRLCvpmF7lySpigd/root/content",
+    image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451694/sani1_hryats.jpg",
     fallbackImage: "https://via.placeholder.com/800x450?text=Sanitizer+Making",
     steps: [
       {
@@ -418,48 +418,48 @@ const flashcardsData = {
         stepNumber: 1,
         title: "Gather Materials and Ingredients",
         description: "You'll need isopropyl alcohol (91-99%), aloe vera gel, essential oils (optional), glycerin (optional), a clean bowl, measuring cups, a funnel, and containers for storage.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRLCvpmF7lySpigd/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451694/sani1_hryats.jpg"
       },
       {
         _id: "f22",
         stepNumber: 2,
         title: "Prepare Your Workspace",
         description: "Clean your work area thoroughly. Ensure you have good ventilation and are away from any open flames as alcohol is flammable.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRBp84UHFKy0Ip4Q/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451690/sani2_xvlmvs.jpg"
       },
       {
         _id: "f23",
         stepNumber: 3,
         title: "Mix the Ingredients",
         description: "Combine 2 parts alcohol with 1 part aloe vera gel in a clean bowl. This creates a sanitizer with approximately 60-70% alcohol content, which is effective against most germs.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRGHzHdMZR9jjiux/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451695/sani3_fiq4co.jpg"
       },
       {
         _id: "f24",
         stepNumber: 4,
         title: "Add Optional Ingredients",
         description: "If desired, add a few drops of essential oil for fragrance (like lavender or tea tree oil) and a few drops of glycerin to prevent skin dryness.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQ6yYoi2Kf2yrxN9/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451692/sani4_qn6hkf.jpg"
       },
       {
         _id: "f25",
         stepNumber: 5,
         title: "Mix Thoroughly",
         description: "Stir the mixture well to ensure all ingredients are fully incorporated. Make sure there are no clumps of aloe vera gel.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQ179UDrlh4hbOb3/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451695/sani6_khxdzt.jpg"
       },
       {
         _id: "f26",
         stepNumber: 6,
         title: "Transfer to Containers",
         description: "Using a funnel, carefully pour the sanitizer into clean spray bottles or pump containers. Label them with the contents and date of preparation.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgQ8OlMjjvSq9Gsu9/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451696/sani5_pcjtvi.jpg"
       }
     ]
   },
   "7": {
     title: "Candle Making Process",
-    image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRbrcQQH30aOBpEH/root/content",
+    image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451686/can1_qrzwv9.jpg",
     fallbackImage: "https://via.placeholder.com/800x450?text=Candle+Making",
     steps: [
       {
@@ -467,28 +467,28 @@ const flashcardsData = {
         stepNumber: 1,
         title: "Melt the Wax",
         description: "Place wax chunks in a heat-safe pot and melt them on a stove over low to medium heat. Stir occasionally to ensure even melting.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRbrcQQH30aOBpEH/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451686/can1_qrzwv9.jpg"
       },
       {
         _id: "f32",
         stepNumber: 2,
         title: "Add Fragrance and Dye",
         description: "Add a few drops of fragrance oil and liquid dye to the melted wax. This gives the candle a pleasant scent and color.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRNlOPXPZKsXgO0-/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451687/can2_akzyju.jpg"
       },
       {
         _id: "f33",
         stepNumber: 3,
         title: "Pour Wax Into Container",
         description: "Pour the wax into a prepared container, leaving space at the top for the wick. Use a chopstick or pencil to center the wick.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRQtvdDG3UCl0P8y/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451688/can3_sw2l1s.jpg"
       },
       {
         _id: "f34",
         stepNumber: 4,
         title: "Insert and Trim the Wick",
         description: "Insert the wick into the wax, leaving a small amount above the surface. Trim the wick to 1/4 inch above the wax level.",
-        image: "https://api.onedrive.com/v1.0/shares/s!AiVGDzhpT6RFgRVr43QnT4FRsea_/root/content"
+        image: "https://res.cloudinary.com/db2eubwvd/image/upload/v1744451688/can4_dcxyzu.jpg"
       }
     ]
   }

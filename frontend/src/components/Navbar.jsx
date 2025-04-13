@@ -127,15 +127,6 @@ const Navbar = () => {
               <Link to="/skills" className={`${isActive('/skills')} py-3 px-4 rounded-lg my-1`}>{t('nav.skills')}</Link>
               <Link to="/forum" className={`${isActive('/forum')} py-3 px-4 rounded-lg my-1`}>{t('nav.forum')}</Link>
               <Link to="/support" className={`${isActive('/support')} py-3 px-4 rounded-lg my-1`}>{t('nav.support')}</Link>
-              
-              <div className="border-t border-gray-100 my-3 pt-3">
-                <Link to="/login" className="block py-3 px-4 rounded-lg text-primary-600 hover:bg-primary-50 transition-colors">
-                  {t('nav.signIn')}
-                </Link>
-                <Link to="/register" className="block py-3 px-4 rounded-lg mt-2 bg-primary-600 text-white hover:bg-primary-700 transition-colors text-center">
-                  {t('nav.joinNow')}
-                </Link>
-              </div>
             </div>
           </div>
         )}
